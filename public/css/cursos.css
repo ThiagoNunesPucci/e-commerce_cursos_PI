@@ -1,0 +1,160 @@
+.conteudo{
+    background-color: white;
+    padding-bottom: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h1#title{
+    text-align: center;
+    text-shadow: 1px 1px 2px #FFD700, 0 0 1em #FFDD4C, 0 0 0.2em white;
+    text-transform: uppercase;
+    height: 130px;
+    padding-top: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-size: 50px;
+    background-image: url('/images/cursos/cursos_backgroud_title.png');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    width: 100%;
+}
+
+/* section de Cursos */
+.curBox{
+    display: flex;
+    overflow-x: hidden;
+    padding-right: 2%;
+    margin-bottom: 2%;
+}
+#moveTodo{
+    touch-action: pan-x;
+}
+
+/* Dissplay frame abaixo da box cursos */
+#curInd{
+    display: none;
+    margin: 0 auto;
+}
+#curFrame{
+    width: 90%;
+    height: 400px;
+    margin: 0 5%;
+    padding: 0 auto;
+}
+
+/* conteudo das div de cursos */
+h2{
+    margin-left: 1vw;
+}
+.curContainer{
+  flex: 1;
+    display: flex;
+    color: black;
+    justify-content: center;
+    margin: 0 1%;
+    padding: 1%;
+    max-width: 410px;
+    min-width: 410px;
+    border: 2px solid #FFEA98;
+}
+
+.curImg{
+    flex: 1;
+    width: 100%;
+    align-self: center;
+}  
+
+.curInfo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: column;
+    margin: 3px;
+    width: 197px;
+}
+
+.curNome{
+    width: 100%;
+    height: 100px;
+    margin: 3px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 1%;
+    text-align: center;
+}
+.curNome:hover{
+    background-color: #FFEA98;
+}
+.curCarga{
+    height: 10%;
+    margin: 1% 0;
+    font-size: 12px;
+}
+
+.curTutor{
+    margin: 1% 0;
+    font-size: 12px;
+}
+
+.curVal{
+    height: 20%;
+    margin: 1% 0;
+    font-size: 15px;
+}
+
+/* botoes para movimentação do carrosel da section de cursos */
+.moveButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.boxToRight{
+    margin-left: 97%;
+}
+
+.boxToRight, .boxToLeft{
+    position: absolute;
+    height: 20%;
+    width: 3%;
+    border: none;
+    transition: .1s ease-out .1s;
+    font-size: 18p;
+    font-weight: 900;
+    background-color: #FFEA98;
+    z-index: 1;
+}
+.boxToRight:hover, .boxToLeft:hover {
+    background-color: rgba(255, 255, 255, 0.301);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Opções de media */
+
+@media(max-width: 400px){
+    .curContainer{
+        width: 98vw;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 98vw;
+        padding: 1% 20vw;
+    }
+    #curFrame{
+        height: 400px;
+    }
+    
+}
+

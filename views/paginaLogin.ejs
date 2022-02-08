@@ -1,0 +1,35 @@
+<%- include('partes/inicioHead') %>
+<title>Login</title>
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <%- include('partes/menuNavecacao') %>
+        <main>
+            <section id="sessao1"> 
+                <div id="cadastro-se"> ACESSE SEU PORTAL</div>
+            </section>
+            <div class="formulario" id="centralizar">
+                <form action="">
+                            <div class="campo">
+                            <label for="email"></label>
+                            <input type="email" class="email" name="email" size="50" requerid
+                                placeholder="Digite seu E-mail">                          
+                            <label for="pass"></label>
+                            <input type="password" name="password" id="pass" inputmode="numeric" minlength="8"
+                                autocomplete="current-password" required placeholder="Senha">
+                                
+                                <button class="botao" type="submit"> ACESSAR </button>
+                                <br>
+                                
+                        </div>
+                                          
+                    </fieldset>
+                    
+                </form>
+
+        </main>
+
+</body>
+<%- include('partes/footer') %>
+
+    

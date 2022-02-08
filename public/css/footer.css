@@ -1,0 +1,137 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.push {
+  height: 1%;  
+}
+
+.secFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-color: #FFEA98;
+    height: 100%;
+}
+
+#copyRight{
+    font-size: 8px;
+    width: 20%;
+    text-align: left;
+    align-self: end;
+    margin-left: 0.5%;
+}
+
+/* style lista Navegação*/
+#footerCenter{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+#navegacao, #linksUteis{
+  width: 50%;
+}
+
+#navegacao h4, #linksUteis h4{
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+ul.footerNavegacao li, ul.footerLinksUteis li{
+  font-size: 8pt;
+  list-style: none;
+  text-align: left;
+}
+
+#footerRightSide{
+  display: flex;
+  justify-content: column;
+  width: 25%;
+  flex-wrap: wrap;
+}
+
+.linksRedes{
+  display: flex;
+  padding-top: 5%;
+  justify-content: column;
+  padding-right: 50%;
+  
+}
+
+.linksRedes img{ 
+  width: 100%;
+  filter: invert(84%) sepia(38%) saturate(3839%) hue-rotate(6deg) brightness(100%) contrast(102%);
+}
+.linksRedes a{
+  list-style: none;
+}
+
+/* Barra de validação de certificado */
+#divValid{
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+#btnBusca, #txtValid{
+  height: 60%;
+  border: none;
+  font-size: 10px;
+  text-align: left; 
+}
+
+@media(max-width: 650px){
+ .secFooter{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #copyRight{
+    order: 1;
+    font-size: 8px;
+    width: 100%;
+    text-align: left;
+    align-self: end;
+    padding-left: 5%;
+  }
+  #footerRightSide{
+    order: -1;
+    justify-content: column;
+    width: 80%;
+    padding-bottom: 5%;
+  }
+  #divValid{
+    justify-content: space-between;
+    width: 40%;
+    padding-top: 5%;
+  }
+  #txtValid{
+    height: 100%;
+  }
+  .linksRedes{
+    width: 40%;
+    justify-content: column;
+    padding: 5% 0 0 0;
+    margin-left: 5%;
+  }
+  .linksRedes img{
+    height: 100%;
+  }
+  #navegacao, #linksUteis{
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    padding: 0 1%;
+  }
+  #footerCenter{
+    width: 100%;
+    display: flex;
+  }
+}

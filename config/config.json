@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "frlanika",
+    "password": "HQLd7Vy3JaHKBEUkG6VPnspQnL04qAjM",
+    "database": "frlanika",
+    "host": "kesavan.db.elephantsql.com",
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

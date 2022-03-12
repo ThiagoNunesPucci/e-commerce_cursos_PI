@@ -23,7 +23,7 @@ app.use('/', require('./router/index'));
 app.use('/cadastro', require('./router/cadastroRoute'));
 app.use('/carrinho', require('./router/carrinhoRoute'));
 app.use('/certificados', require('./router/certificadosRoute'));
-
+app.use('/cursos', require('./router/cursosRoute'));
 app.use('/login', require('./router/loginRoute'));
 app.use('/cadastro', require('./router/cadastroRoute'));
 app.use('/nova_senha', require('./router/resetPasswordRoute'));
